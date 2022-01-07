@@ -9,7 +9,7 @@ import MyOrder from "../containers/MyOrder";
 import MyOrders from "../containers/MyOrders";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import "../style/global.css";
+import "../styles/global.css";
 
 const App = () => {
   return (
