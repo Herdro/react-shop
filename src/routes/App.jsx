@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CreateAccount from "../containers/CreateAccount";
+import CreateAccount from "../pages/CreateAccount";
 import Layout from "../containers/Layout";
-import Login from "../containers/Login";
-import RecoveryPassword from "../containers/RecoveryPassword";
-import EditAccount from "../containers/EditAccount";
-import MyOrder from "../containers/MyOrder";
-import MyOrders from "../containers/MyOrders";
+import Login from "../pages/Login";
+import RecoveryPassword from "../pages/RecoveryPassword";
+import EditAccount from "../pages/EditAccount";
+import MyOrder from "../pages/MyOrder";
+import MyOrders from "../pages/MyOrders";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import "../styles/global.css";

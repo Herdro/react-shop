@@ -1,11 +1,13 @@
 import React from 'react';
 import ShopingCart from '../components/ShopingCart';
 
+import flechita from '@icons/flechita.svg';
+
 const ProdutsDetails = () => {
     return (
         <aside className="product-detail">
         <div className="title-container">
-          <img src="./icons/flechita.svg" alt="arrow" />
+          <img src={flechita} alt="arrow" />
           <p className="title">My order</p>
         </div>
     

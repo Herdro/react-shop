@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/ProductDetail.scss";
 
+import addCard from '@icons/bt_add_to_cart.svg';
+
 const ProductDetail = () => {
   return (
     <aside className="product-detail">
@@ -19,7 +21,7 @@ const ProductDetail = () => {
           function, add your hall or workspace.
         </p>
         <button className="primary-button add-to-cart-button">
-          <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
+          <img src={addCard} alt="add to cart" />
           Add to cart
         </button>
       </div>
