@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from "react";
-import ProductCard from "../components/ProductCard";
+import React from "react";
+import ProductCard from "@components/ProductCard";
+import useGetProducts from "../hooks/useGetProducts";
 import "../styles/Cards.scss";
-import axios from "axios";
 
 const API = "https://api.escuelajs.co/api/v1/products";
 
 const CardContainer = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(async () => {
-        const response = await axios(API);
-        setProducts(response.data);
-    }, [])
-
+  const products = useGetProducts(API);
+  
   return (
-    <section class="main-container">
-      <div class="cards-container">
+    <section className="main-container">
+      <div className="cards-container">
         {products.map(product => (
-            <ProductCard />
+            <ProductCard product={product} key={product.id} />
         ))}
       </div>
     </section>
